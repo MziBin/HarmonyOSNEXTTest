@@ -1,0 +1,2 @@
+# HarmonyOSNEXTTest
+HarmonyOSNEXT的联系仓库
