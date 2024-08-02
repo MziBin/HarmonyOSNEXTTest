@@ -1,6 +1,10 @@
 {
   "src": [
     "pages/Index",
-    "pages/CaseDay01/LoginPage"
+    "pages/CaseDay01/LoginPage",
+    "pages/test/TestPage01",
+    "pages/CaseDay02/BaiduPage",
+    "pages/CaseDay02/HeimaBliBliPage",
+    "pages/CaseDay02/HMDiscoverPage"
   ]
 }
