@@ -5,6 +5,10 @@
     "pages/test/TestPage01",
     "pages/CaseDay02/BaiduPage",
     "pages/CaseDay02/HeimaBliBliPage",
-    "pages/CaseDay02/HMDiscoverPage"
+    "pages/CaseDay02/HMDiscoverPage",
+    "pages/CaseDay03/LoginPage_03",
+    "pages/test/TestStatePage",
+    "pages/CaseDay03/contentPage_03",
+    "pages/CaseDay04/ZhiHuPage"
   ]
 }
