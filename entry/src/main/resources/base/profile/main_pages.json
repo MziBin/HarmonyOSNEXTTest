@@ -10,6 +10,7 @@
     "pages/test/TestStatePage",
     "pages/CaseDay03/contentPage_03",
     "pages/CaseDay04/ZhiHuPage",
-    "pages/CaseDay04/WeiXinPage"
+    "pages/CaseDay04/WeiXinPage",
+    "pages/CaseDay05/WaterFlowPage"
   ]
 }
