@@ -4,9 +4,13 @@ import { BusinessError } from '@kit.BasicServicesKit'
 @Entry
 @Component
 struct Index {
-  routerList: arrRouter[] =
-    [new arrRouter("哔哩哔哩黑马页面", 'pages/CaseDay02/HeimaBliBliPage'),
-      new arrRouter("知乎页面", 'pages/CaseDay04/ZhiHuPage')]
+  routerList: arrRouter[] = [
+    new arrRouter("哔哩哔哩黑马页面", 'pages/CaseDay02/HeimaBliBliPage'),
+    new arrRouter("知乎页面", 'pages/CaseDay04/ZhiHuPage'),
+    new arrRouter("登录页面", "pages/CaseDay03/LoginPage_03"),
+    new arrRouter("物流", "pages/CaseDay06/LogisticsRedirectPage")
+
+  ]
 
   build() {
     List() {

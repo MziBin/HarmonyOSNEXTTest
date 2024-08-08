@@ -78,7 +78,7 @@ struct WaterFlowPage {
       "goods_count": 1,
     })
   ]
-  scrollerItem: Scroller = new Scroller()
+  scroller: Scroller = new Scroller()
   @State
   loadingFlag: boolean = false
 
@@ -94,11 +94,11 @@ struct WaterFlowPage {
       .width("100%")
       .justifyContent(FlexAlign.Center)
     }
-
   }
 
   //添加数据,等待3秒后添加数据刷新
   async addGoods(): Promise<boolean> {
+
     return new Promise<boolean>((resolve, reject) => {
       setTimeout(() => {
         // 等待一秒钟
@@ -106,15 +106,14 @@ struct WaterFlowPage {
         this.goodsList.push(...this.goodsList.slice(0, 9)) // 直接往里面push10条数据
         resolve(true)
       }, 3000)
-    })
-    this.goodsList.push(...this.goodsList)
-    // promptAction.showToast({ message: "添加数据" })
+    }) // this.goodsList.push(...this.goodsList)// promptAction.showToast({ message: "添加数据" })
+    // (this.scroller.scrollEdge(Edge.Top))()
   }
 
   build() {
     WaterFlow({
       footer: this.loadingRefresh(),
-      scroller: this.scrollerItem
+      scroller: this.scroller
     }) {
       ForEach(this.goodsList, (item: IShowGoodsModel, index: number) => {
         FlowItem() {
@@ -124,6 +123,7 @@ struct WaterFlowPage {
     }
     .onReachEnd(
       async () => {
+        this.scroller.scrollEdge(Edge.Top)
         // promptAction.showToast({ message: '滚动底部啦' })
         if (!this.loadingFlag) {
           try {

@@ -63,8 +63,8 @@ struct LoginPage_03 {
                 buttons: [{ text: "确定", color: "#fffffff" }]
               })
             }
-          })
-          .enabled(this.isShowButton)
+          })//双非取反
+          .enabled(!!(this.username && this.password))
       }
       .width("100%")
 
