@@ -1,2 +1,3 @@
 # HarmonyOSNEXTTest
-HarmonyOSNEXT的联系仓库
+
+HarmonyOSNEXT的练习仓库
