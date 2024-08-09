@@ -16,6 +16,10 @@
     "pages/CaseDay06/StatePage",
     "pages/CaseDay06/LogisticsRedirectPage",
     "pages/CaseDay06/LoginWuLiuPage",
-    "pages/CaseDay06/WuLiuMainPage"
+    "pages/CaseDay06/WuLiuMainPage",
+    "pages/test/RichText",
+    "pages/CaseDay_07/PreferencesCasePage",
+    "pages/CaseDay_07/JKYLoginPage",
+    "pages/CaseDay_07/JKYMainPage"
   ]
 }

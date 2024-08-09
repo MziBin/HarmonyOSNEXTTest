@@ -35,10 +35,25 @@ struct WuLiuMainPage {
             }
             .tabBar("待提货")
 
-            TabContent()
-              .tabBar("在途")
-            TabContent()
-              .tabBar("已完成")
+            TabContent() {
+              Column() {
+
+              }
+              .width("100%")
+              .height("100%")
+              .backgroundColor(Color.Black)
+            }
+            .tabBar("在途")
+
+            TabContent() {
+              Column() {
+
+              }
+              .width("100%")
+              .height("100%")
+              .backgroundColor(Color.Grey)
+            }
+            .tabBar("已完成")
           }
         }
         .tabBar(this.tabsBuilder(item))

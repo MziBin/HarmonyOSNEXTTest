@@ -8,7 +8,8 @@ struct Index {
     new arrRouter("哔哩哔哩黑马页面", 'pages/CaseDay02/HeimaBliBliPage'),
     new arrRouter("知乎页面", 'pages/CaseDay04/ZhiHuPage'),
     new arrRouter("登录页面", "pages/CaseDay03/LoginPage_03"),
-    new arrRouter("物流", "pages/CaseDay06/LogisticsRedirectPage")
+    new arrRouter("物流", "pages/CaseDay06/LogisticsRedirectPage"),
+    new arrRouter("极客园", "pages/CaseDay_07/JKYLoginPage")
 
   ]
 
